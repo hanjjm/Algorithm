@@ -1,5 +1,5 @@
 //
-//  main.cpp
+//  p1001.cpp
 //  C++
 //
 //  Created by KimHanJu on 08/09/2019.
@@ -7,9 +7,11 @@
 //
 
 #include <iostream>
+using namespace std;
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    short int A, B;
+    cin >> A >> B;
+    cout << A - B;
     return 0;
 }
