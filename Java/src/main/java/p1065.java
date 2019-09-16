@@ -7,7 +7,7 @@ public class p1065 {
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
 		bw.write(countHansu(Integer.parseInt(br.readLine())));
-		
+
 		bw.flush();
 		br.close();
 		bw.close();
