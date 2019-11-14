@@ -1,17 +1,15 @@
 //
-//  p1001.cpp
+//  main.cpp
 //  C++
 //
-//  Created by KimHanJu on 08/09/2019.
+//  Created by KimHanJu on 2019/11/14.
 //  Copyright © 2019 KimHanJu. All rights reserved.
 //
 
 #include <iostream>
-using namespace std;
 
 int main(int argc, const char * argv[]) {
-    short int A, B;
-    cin >> A >> B;
-    cout << A - B;
+    // insert code here...
+    std::cout << "Hello, World!\n";
     return 0;
 }
