@@ -10,7 +10,7 @@
 using namespace std;
 
 int main() {
-    int array[8], result[8];;
+    int array[8], result[8];
     for(int i = 0; i < 8; i++) cin >> array[i];
     
     int index = array[1] - array[0];
