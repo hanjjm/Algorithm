@@ -11,7 +11,7 @@ using namespace std;
 
 int main() {
     int point[4][2];
-    for(int i = 0; i < 3; i++) cin >> point[i][0] >> point[i][1];;
+    for(int i = 0; i < 3; i++) cin >> point[i][0] >> point[i][1];
     for(int i = 0; i < 3; i++) {
         if(point[0][0] == point[1][0]) point[3][0] = point[2][0];
         else if(point[1][0] == point[2][0]) point[3][0] = point[0][0];
