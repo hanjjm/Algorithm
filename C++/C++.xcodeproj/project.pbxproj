@@ -11,6 +11,7 @@
 		40CF85AB24371B9700025153 /* hash1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40CF85AA24371B9700025153 /* hash1.cpp */; };
 		40CF85AD243722DA00025153 /* hash2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40CF85AC243722DA00025153 /* hash2.cpp */; };
 		40CF85AF2437344800025153 /* hash3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40CF85AE2437344800025153 /* hash3.cpp */; };
+		40CF85B124373EBA00025153 /* stack1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40CF85B024373EBA00025153 /* stack1.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -81,6 +82,7 @@
 		40CF85AA24371B9700025153 /* hash1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hash1.cpp; sourceTree = "<group>"; };
 		40CF85AC243722DA00025153 /* hash2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hash2.cpp; sourceTree = "<group>"; };
 		40CF85AE2437344800025153 /* hash3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hash3.cpp; sourceTree = "<group>"; };
+		40CF85B024373EBA00025153 /* stack1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stack1.cpp; sourceTree = "<group>"; };
 		40D6280C2388475E00627634 /* p2675.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p2675.cpp; sourceTree = "<group>"; };
 		40ECABF82386D13E002C5516 /* p1546.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p1546.cpp; sourceTree = "<group>"; };
 		40ECABFA2386E28D002C5516 /* p4344.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p4344.cpp; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				40CF85AA24371B9700025153 /* hash1.cpp */,
 				40CF85AC243722DA00025153 /* hash2.cpp */,
 				40CF85AE2437344800025153 /* hash3.cpp */,
+				40CF85B024373EBA00025153 /* stack1.cpp */,
 			);
 			path = "C++";
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				40CF85AF2437344800025153 /* hash3.cpp in Sources */,
 				40CF85AB24371B9700025153 /* hash1.cpp in Sources */,
 				40CF85AD243722DA00025153 /* hash2.cpp in Sources */,
+				40CF85B124373EBA00025153 /* stack1.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
