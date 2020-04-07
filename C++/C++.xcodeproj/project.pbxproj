@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		405276F0243CC80C000DCB0D /* sort2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 405276EF243CC80C000DCB0D /* sort2.cpp */; };
+		405276F2243CD0EB000DCB0D /* sort3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 405276F1243CD0EB000DCB0D /* sort3.cpp */; };
 		40A3217E243337C100034E73 /* p1012.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40A3217D243337C100034E73 /* p1012.cpp */; };
 		40CF85AB24371B9700025153 /* hash1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40CF85AA24371B9700025153 /* hash1.cpp */; };
 		40CF85AD243722DA00025153 /* hash2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40CF85AC243722DA00025153 /* hash2.cpp */; };
@@ -45,6 +46,7 @@
 		40037B79237DA4E40012F029 /* p2562.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p2562.cpp; sourceTree = "<group>"; };
 		40435475238C3DD4009D22D0 /* p2908.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p2908.cpp; sourceTree = "<group>"; };
 		405276EF243CC80C000DCB0D /* sort2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sort2.cpp; sourceTree = "<group>"; };
+		405276F1243CD0EB000DCB0D /* sort3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sort3.cpp; sourceTree = "<group>"; };
 		4069E4A2238440D5009D14B6 /* p3052.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p3052.cpp; sourceTree = "<group>"; };
 		407FCF18240FDAC2003E367F /* p3009.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p3009.cpp; sourceTree = "<group>"; };
 		407FCF1E24177C31003E367F /* p10870.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p10870.cpp; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				40CF85BC243A397F00025153 /* heap1.cpp */,
 				40CF85BE243B703800025153 /* sort1.cpp */,
 				405276EF243CC80C000DCB0D /* sort2.cpp */,
+				405276F1243CD0EB000DCB0D /* sort3.cpp */,
 			);
 			path = "C++";
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				40CF85BD243A397F00025153 /* heap1.cpp in Sources */,
 				40CF85B124373EBA00025153 /* stack1.cpp in Sources */,
 				40CF85B524378D1800025153 /* deque2.cpp in Sources */,
+				405276F2243CD0EB000DCB0D /* sort3.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
