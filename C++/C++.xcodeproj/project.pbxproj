@@ -18,6 +18,7 @@
 		40527702243DE1F0000DCB0D /* dp2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40527701243DE1F0000DCB0D /* dp2.cpp */; };
 		40527704243DF241000DCB0D /* dfs1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40527703243DF241000DCB0D /* dfs1.cpp */; };
 		40527706243E0053000DCB0D /* dfs2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40527705243E0053000DCB0D /* dfs2.cpp */; };
+		40527708243F200D000DCB0D /* dfs3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40527707243F200D000DCB0D /* dfs3.cpp */; };
 		40A3217E243337C100034E73 /* p1012.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40A3217D243337C100034E73 /* p1012.cpp */; };
 		40CF85AB24371B9700025153 /* hash1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40CF85AA24371B9700025153 /* hash1.cpp */; };
 		40CF85AD243722DA00025153 /* hash2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40CF85AC243722DA00025153 /* hash2.cpp */; };
@@ -65,6 +66,7 @@
 		40527701243DE1F0000DCB0D /* dp2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = dp2.cpp; sourceTree = "<group>"; };
 		40527703243DF241000DCB0D /* dfs1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = dfs1.cpp; sourceTree = "<group>"; };
 		40527705243E0053000DCB0D /* dfs2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = dfs2.cpp; sourceTree = "<group>"; };
+		40527707243F200D000DCB0D /* dfs3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = dfs3.cpp; sourceTree = "<group>"; };
 		4069E4A2238440D5009D14B6 /* p3052.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p3052.cpp; sourceTree = "<group>"; };
 		407FCF18240FDAC2003E367F /* p3009.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p3009.cpp; sourceTree = "<group>"; };
 		407FCF1E24177C31003E367F /* p10870.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p10870.cpp; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 				40527701243DE1F0000DCB0D /* dp2.cpp */,
 				40527703243DF241000DCB0D /* dfs1.cpp */,
 				40527705243E0053000DCB0D /* dfs2.cpp */,
+				40527707243F200D000DCB0D /* dfs3.cpp */,
 			);
 			path = "C++";
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				40CF85BD243A397F00025153 /* heap1.cpp in Sources */,
 				40527704243DF241000DCB0D /* dfs1.cpp in Sources */,
 				40CF85B124373EBA00025153 /* stack1.cpp in Sources */,
+				40527708243F200D000DCB0D /* dfs3.cpp in Sources */,
 				405276FE243DD27F000DCB0D /* bruteforce3.cpp in Sources */,
 				405276F8243CE2A5000DCB0D /* heap3.cpp in Sources */,
 				40527700243DDA08000DCB0D /* dp1.cpp in Sources */,
