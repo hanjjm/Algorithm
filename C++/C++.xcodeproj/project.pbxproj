@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40332A6E244EEC7C00F8FFCC /* dfs4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40332A6D244EEC7C00F8FFCC /* dfs4.cpp */; };
 		405276F0243CC80C000DCB0D /* sort2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 405276EF243CC80C000DCB0D /* sort2.cpp */; };
 		405276F2243CD0EB000DCB0D /* sort3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 405276F1243CD0EB000DCB0D /* sort3.cpp */; };
 		405276F4243CDBDC000DCB0D /* bruteforce1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 405276F3243CDBDC000DCB0D /* bruteforce1.cpp */; };
@@ -55,6 +56,7 @@
 		40037B75237D954D0012F029 /* p10172.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p10172.cpp; sourceTree = "<group>"; };
 		40037B77237D97670012F029 /* p7287.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p7287.cpp; sourceTree = "<group>"; };
 		40037B79237DA4E40012F029 /* p2562.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p2562.cpp; sourceTree = "<group>"; };
+		40332A6D244EEC7C00F8FFCC /* dfs4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = dfs4.cpp; sourceTree = "<group>"; };
 		40435475238C3DD4009D22D0 /* p2908.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p2908.cpp; sourceTree = "<group>"; };
 		405276EF243CC80C000DCB0D /* sort2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sort2.cpp; sourceTree = "<group>"; };
 		405276F1243CD0EB000DCB0D /* sort3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sort3.cpp; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 				40527705243E0053000DCB0D /* dfs2.cpp */,
 				40527707243F200D000DCB0D /* dfs3.cpp */,
 				4052770B243F4D39000DCB0D /* greedy1.cpp */,
+				40332A6D244EEC7C00F8FFCC /* dfs4.cpp */,
 			);
 			path = "C++";
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				405276FE243DD27F000DCB0D /* bruteforce3.cpp in Sources */,
 				405276F8243CE2A5000DCB0D /* heap3.cpp in Sources */,
 				40527700243DDA08000DCB0D /* dp1.cpp in Sources */,
+				40332A6E244EEC7C00F8FFCC /* dfs4.cpp in Sources */,
 				40CF85B524378D1800025153 /* deque2.cpp in Sources */,
 				405276F2243CD0EB000DCB0D /* sort3.cpp in Sources */,
 				40527706243E0053000DCB0D /* dfs2.cpp in Sources */,
