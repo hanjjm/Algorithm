@@ -7,35 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		40332A6E244EEC7C00F8FFCC /* dfs4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40332A6D244EEC7C00F8FFCC /* dfs4.cpp */; };
-		405276F0243CC80C000DCB0D /* sort2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 405276EF243CC80C000DCB0D /* sort2.cpp */; };
-		405276F2243CD0EB000DCB0D /* sort3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 405276F1243CD0EB000DCB0D /* sort3.cpp */; };
-		405276F4243CDBDC000DCB0D /* bruteforce1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 405276F3243CDBDC000DCB0D /* bruteforce1.cpp */; };
-		405276F6243CDFC4000DCB0D /* heap2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 405276F5243CDFC4000DCB0D /* heap2.cpp */; };
-		405276F8243CE2A5000DCB0D /* heap3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 405276F7243CE2A5000DCB0D /* heap3.cpp */; };
-		405276FC243CF7EB000DCB0D /* bruteforce2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 405276FB243CF7EB000DCB0D /* bruteforce2.cpp */; };
-		405276FE243DD27F000DCB0D /* bruteforce3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 405276FD243DD27E000DCB0D /* bruteforce3.cpp */; };
-		40527700243DDA08000DCB0D /* dp1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 405276FF243DDA08000DCB0D /* dp1.cpp */; };
-		40527702243DE1F0000DCB0D /* dp2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40527701243DE1F0000DCB0D /* dp2.cpp */; };
-		40527704243DF241000DCB0D /* dfs1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40527703243DF241000DCB0D /* dfs1.cpp */; };
-		40527706243E0053000DCB0D /* dfs2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40527705243E0053000DCB0D /* dfs2.cpp */; };
-		40527708243F200D000DCB0D /* dfs3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40527707243F200D000DCB0D /* dfs3.cpp */; };
-		4052770C243F4D39000DCB0D /* greedy1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4052770B243F4D39000DCB0D /* greedy1.cpp */; };
-		407543582450319100241DC0 /* greedy2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 407543572450319100241DC0 /* greedy2.cpp */; };
-		4075435A2450395E00241DC0 /* greedy3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 407543592450395E00241DC0 /* greedy3.cpp */; };
-		4075435C24504DDE00241DC0 /* greedy4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4075435B24504DDE00241DC0 /* greedy4.cpp */; };
-		40A3217E243337C100034E73 /* p1012.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40A3217D243337C100034E73 /* p1012.cpp */; };
-		40CF85AB24371B9700025153 /* hash1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40CF85AA24371B9700025153 /* hash1.cpp */; };
-		40CF85AD243722DA00025153 /* hash2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40CF85AC243722DA00025153 /* hash2.cpp */; };
-		40CF85AF2437344800025153 /* hash3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40CF85AE2437344800025153 /* hash3.cpp */; };
-		40CF85B124373EBA00025153 /* stack1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40CF85B024373EBA00025153 /* stack1.cpp */; };
-		40CF85B32437740C00025153 /* deque1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40CF85B22437740C00025153 /* deque1.cpp */; };
-		40CF85B524378D1800025153 /* deque2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40CF85B424378D1800025153 /* deque2.cpp */; };
-		40CF85B724379C2300025153 /* deque3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40CF85B624379C2300025153 /* deque3.cpp */; };
-		40CF85B9243A218300025153 /* stack2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40CF85B8243A218300025153 /* stack2.cpp */; };
-		40CF85BB243A2A6400025153 /* deque4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40CF85BA243A2A6400025153 /* deque4.cpp */; };
-		40CF85BD243A397F00025153 /* heap1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40CF85BC243A397F00025153 /* heap1.cpp */; };
-		40CF85BF243B703800025153 /* sort1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40CF85BE243B703800025153 /* sort1.cpp */; };
+		4075435E2450518000241DC0 /* p17136.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4075435D2450518000241DC0 /* p17136.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -78,6 +50,8 @@
 		407543572450319100241DC0 /* greedy2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = greedy2.cpp; sourceTree = "<group>"; };
 		407543592450395E00241DC0 /* greedy3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = greedy3.cpp; sourceTree = "<group>"; };
 		4075435B24504DDE00241DC0 /* greedy4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = greedy4.cpp; sourceTree = "<group>"; };
+		4075435D2450518000241DC0 /* p17136.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p17136.cpp; sourceTree = "<group>"; };
+		4075435F2450802D00241DC0 /* bruteforce4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bruteforce4.cpp; sourceTree = "<group>"; };
 		407FCF18240FDAC2003E367F /* p3009.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p3009.cpp; sourceTree = "<group>"; };
 		407FCF1E24177C31003E367F /* p10870.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p10870.cpp; sourceTree = "<group>"; };
 		407FCF22241794C8003E367F /* p7568.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p7568.cpp; sourceTree = "<group>"; };
@@ -248,6 +222,8 @@
 				407543572450319100241DC0 /* greedy2.cpp */,
 				407543592450395E00241DC0 /* greedy3.cpp */,
 				4075435B24504DDE00241DC0 /* greedy4.cpp */,
+				4075435D2450518000241DC0 /* p17136.cpp */,
+				4075435F2450802D00241DC0 /* bruteforce4.cpp */,
 			);
 			path = "C++";
 			sourceTree = "<group>";
@@ -309,35 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				405276F0243CC80C000DCB0D /* sort2.cpp in Sources */,
-				40CF85B9243A218300025153 /* stack2.cpp in Sources */,
-				40A3217E243337C100034E73 /* p1012.cpp in Sources */,
-				40CF85AF2437344800025153 /* hash3.cpp in Sources */,
-				40CF85BB243A2A6400025153 /* deque4.cpp in Sources */,
-				40CF85B724379C2300025153 /* deque3.cpp in Sources */,
-				40CF85AB24371B9700025153 /* hash1.cpp in Sources */,
-				4075435A2450395E00241DC0 /* greedy3.cpp in Sources */,
-				40CF85AD243722DA00025153 /* hash2.cpp in Sources */,
-				4052770C243F4D39000DCB0D /* greedy1.cpp in Sources */,
-				40CF85BF243B703800025153 /* sort1.cpp in Sources */,
-				405276FC243CF7EB000DCB0D /* bruteforce2.cpp in Sources */,
-				405276F4243CDBDC000DCB0D /* bruteforce1.cpp in Sources */,
-				405276F6243CDFC4000DCB0D /* heap2.cpp in Sources */,
-				40527702243DE1F0000DCB0D /* dp2.cpp in Sources */,
-				40CF85B32437740C00025153 /* deque1.cpp in Sources */,
-				407543582450319100241DC0 /* greedy2.cpp in Sources */,
-				40CF85BD243A397F00025153 /* heap1.cpp in Sources */,
-				4075435C24504DDE00241DC0 /* greedy4.cpp in Sources */,
-				40527704243DF241000DCB0D /* dfs1.cpp in Sources */,
-				40CF85B124373EBA00025153 /* stack1.cpp in Sources */,
-				40527708243F200D000DCB0D /* dfs3.cpp in Sources */,
-				405276FE243DD27F000DCB0D /* bruteforce3.cpp in Sources */,
-				405276F8243CE2A5000DCB0D /* heap3.cpp in Sources */,
-				40527700243DDA08000DCB0D /* dp1.cpp in Sources */,
-				40332A6E244EEC7C00F8FFCC /* dfs4.cpp in Sources */,
-				40CF85B524378D1800025153 /* deque2.cpp in Sources */,
-				405276F2243CD0EB000DCB0D /* sort3.cpp in Sources */,
-				40527706243E0053000DCB0D /* dfs2.cpp in Sources */,
+				4075435E2450518000241DC0 /* p17136.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
