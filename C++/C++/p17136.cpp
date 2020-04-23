@@ -6,37 +6,28 @@
 //  Copyright © 2020 KimHanJu. All rights reserved.
 //
 
-int answer[6] = {0, 0, 0, 0, 0, 0};
+
 int matrix[15][15];
+int copyMatrix[15][15];
 
 
 #include <iostream>
 using namespace std;
 
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(NULL);
-    
-    for(int i = 0; i < 15; i++) {
-        for(int j = 0; j < 15; j++) matrix[i][j] = 0;
-    }
-    
-    for(int i = 0; i < 10; i++) {
-        for(int j = 0; j < 10; j++) cin >> matrix[i][j];
-    }
-    
-    
-    int size = 5, check = 0, check2 = 0, allIn = 0;
+int solve(int size) {
+    int answer[6];
+    for(int i = 0; i < 6; i++) answer[i] = 0;
+    int check = 0, check2 = 0, allIn = 0;
     while(size) {
         allIn = 0;
         for(int i = 0; i < 10; i++) {
             for(int j = 0; j < 10; j++) {
                 check = 0;
-                if(matrix[i][j] == 1) {
+                if(copyMatrix[i][j] == 1) {
                     check2 = 0;
                     for(int k = 0; k < size; k++) {
                         for(int l = 0; l < size; l++) {
-                            if(!matrix[i + k][j + l]) {
+                            if(!copyMatrix[i + k][j + l]) {
                                 check2 = 1;
                                 break;
                             }
@@ -47,7 +38,7 @@ int main() {
                     if(check) {
                         for(int k = 0; k < size; k++) {
                             for(int l = 0; l < size; l++) {
-                                matrix[i + k][j + l] = 0;
+                                copyMatrix[i + k][j + l] = 0;
                             }
                         }
                         answer[size]++;
@@ -66,9 +57,37 @@ int main() {
     
     for(int i = 0; i < 10; i++) {
         for(int j = 0; j < 10; j++) {
-            if(matrix[i][j]) num = -1;
+            if(copyMatrix[i][j]) num = 26;
+        }
+    }
+    return num;
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+    
+    for(int i = 0; i < 15; i++) {
+        for(int j = 0; j < 15; j++) {
+            copyMatrix[i][j] = 0;
+            matrix[i][j] = 0;
         }
     }
     
-    cout << num;
+    for(int i = 0; i < 10; i++) {
+        for(int j = 0; j < 10; j++) cin >> matrix[i][j];
+    }
+    
+    int minNum = 26;
+    for(int i = 5; i > 0; i--) {
+        for(int i = 0; i < 15; i++) {
+            for(int j = 0; j < 15; j++) copyMatrix[i][j] = matrix[i][j];
+        }
+        int eachMin = 26;
+        eachMin = solve(i);
+        minNum = min(minNum, eachMin);
+        //cout << minNum << " ";
+    }
+    if(minNum == 26) minNum = -1;
+    cout  << minNum;
 }
