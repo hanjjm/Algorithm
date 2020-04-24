@@ -27,16 +27,16 @@ int solution(vector<vector<int>> baseball) {
     int answer = 0;
     for(int i = 123; i <= 987; i++) {
         int index = 0;
-        
+
         if((i % 100) / 10 == 0 || i % 10 == 0) continue;
         if(i / 100 == (i % 100) / 10) continue;
         if(i / 100 == i % 10) continue;
         if((i % 100) / 10 == i % 10) continue;
-        
+
         for(int j = 0; j < baseball.size(); j++) {
             int eachStrike = strike(i, baseball[j][0]);
             int eachBall = ball(i, baseball[j][0]);
-            
+
             if(baseball[j][1] == eachStrike && baseball[j][2] == eachBall) {
                 index++;
             }
