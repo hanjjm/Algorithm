@@ -39,9 +39,16 @@ int main() {
     int time = 1, index = 0;
     char dir = 'R';
     deque<pair<int, int>> deq;
-    deq.push_back(make_pair(1, 1));
+    if(matrix[1][2]) {
+        deq.push_back(make_pair(1, 2));
+        deq.push_back(make_pair(1, 1));
+    } else deq.push_back(make_pair(1, 2));
     while(true) {
         int flag = 0;
+//        for(int i = 0; i < deq.size(); i++) {
+//            cout << deq[i].first << " " << deq[i].second << endl;
+//        }
+//        cout << "------" << endl;
         if(time == second[index]) {
             if(direction[index] == 'L') {
                 if(dir == 'R') dir = 'U';
@@ -70,7 +77,7 @@ int main() {
                 deq.push_front(make_pair(deq.front().first, deq.front().second + 1));
             }
         } else if(dir == 'L') {
-            if(deq.front().second - 1 == -1) break;
+            if(deq.front().second - 1 == 0) break;
             for(int i = 0; i < deq.size(); i++) {
                 if(deq.front().first == deq[i].first && deq.front().second - 1 == deq[i].second) flag = 1;
             }
@@ -83,7 +90,7 @@ int main() {
                 deq.push_front(make_pair(deq.front().first, deq.front().second - 1));
             }
         } else if(dir == 'U') {
-            if(deq.front().first - 1 == -1) break;
+            if(deq.front().first - 1 == 0) break;
             for(int i = 0; i < deq.size(); i++) {
                 if(deq.front().first - 1 == deq[i].first && deq.front().second == deq[i].second) flag = 1;
             }
