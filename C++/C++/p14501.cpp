@@ -15,8 +15,20 @@ int main() {
     
     int day;
     cin >> day;
-    int time[day], cost[day];
-    for(int i = 0; i < day; i++) cin >> time[i] >> cost[i];
+    int DP[day + 1];
+    int time[day + 1], cost[day + 1];
+    time[0] = 0; cost[0] = 0;
+    for(int i = 0; i < day; i++) cin >> time[i + 1] >> cost[i + 1];
+    DP[0] = 0; // 안쓰는거
+//    if(time[0]) DP[1] = cost[1];
+//    else DP[1] = 0;
     
+    for(int i = 1; i <= day; i++) {
+        if(i + time[i] > day) continue;
+        for(int j = 1; j <= i; j++) {
+            DP[i] = max(DP[i + time[i]] + cost[i], DP[i]);
+        }
+    }
     
+    cout << DP[day];
 }
