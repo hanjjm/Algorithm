@@ -122,6 +122,7 @@
 		40EFADCC245C40A0008B20EE /* p14499.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p14499.cpp; sourceTree = "<group>"; };
 		40F0DAA1245EB00C00452C11 /* p17471.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p17471.cpp; sourceTree = "<group>"; };
 		40F0DAA3245ED96100452C11 /* string1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = string1.cpp; sourceTree = "<group>"; };
+		40F0DAA4245F0EB600452C11 /* bruteforce9.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bruteforce9.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +253,7 @@
 				407C2A42245CA2260004489E /* recursive1.cpp */,
 				40F0DAA1245EB00C00452C11 /* p17471.cpp */,
 				40F0DAA3245ED96100452C11 /* string1.cpp */,
+				40F0DAA4245F0EB600452C11 /* bruteforce9.cpp */,
 			);
 			path = "C++";
 			sourceTree = "<group>";
