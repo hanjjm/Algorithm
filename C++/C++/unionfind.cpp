@@ -6,7 +6,8 @@ unordered_map<long long, long long> room;
 
 long long find(long long next) {
     if(room[next] == 0) return next;
-    return room[next] = find(room[next]);
+    else return find(room[next]);
+    
 }
 
 vector<long long> solution(long long k, vector<long long> room_number) {
