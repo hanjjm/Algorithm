@@ -8,32 +8,32 @@
 
 #include <iostream>
 using namespace std;
-int matrix[102][102];
+int testCase, N;
+int matrix[102][102] = {0, };
 int maxNum = 0;
 void up(int, int, int, int, int);
 void down(int, int, int, int, int);
 void right(int, int, int, int, int);
 void left(int, int, int, int, int);
 
-void initMatrix(int len) {
+void initMatrix() {
     for(int i = 0; i < 102; i++) {
         for(int j = 0; j < 102; j++) matrix[i][j] = 0;
     }
-}
-
-void input(int len) {
-    for(int i = 1; i <= len; i++) {
-        for(int j = 1; j <= len; j++) cin >> matrix[i][j];
+    
+    for(int i = 1; i <= N; i++) {
+        for(int j = 1; j <= N; j++) cin >> matrix[i][j];
     }
-    for(int i = 0; i < len + 2; i++) matrix[i][0] = -2;
-    for(int i = 0; i < len + 2; i++) matrix[i][len + 1] = -2;
-    for(int i = 0; i < len + 2; i++) matrix[0][i] = -2;
-    for(int i = 0; i < len + 2; i++) matrix[len + 1][i] = -2;
+    
+    for(int i = 0; i < N + 2; i++) matrix[i][0] = -2;
+    for(int i = 0; i < N + 2; i++) matrix[i][N + 1] = -2;
+    for(int i = 0; i < N + 2; i++) matrix[0][i] = -2;
+    for(int i = 0; i < N + 2; i++) matrix[N + 1][i] = -2;
 }
 
-void printMatrix(int len) {
-    for(int i = 0; i < len + 2; i++) {
-        for(int j = 0; j < len + 2; j++) cout << matrix[i][j];
+void printBoard() {
+    for(int i = 0; i < N + 2; i++) {
+        for(int j = 0; j < N + 2; j++) cout << matrix[i][j];
         cout << endl;
     }
 }
@@ -154,10 +154,10 @@ void left(int x, int y, int count, int endX, int endY) {
     }
 }
 
-void solve(int len) {
-    for(int i = 1; i <= len; i++) {
-        for(int j = 1; j <= len; j++) {
-            if(matrix[i][j] == 0 || matrix[i][j] == -1) {
+void solve(int num) {
+    for(int i = 1; i <= N; i++) {
+        for(int j = 1; j <= N; j++) {
+            if(matrix[i][j] == 0) {
                 up(i - 1, j, 0, i, j);
                 down(i + 1, j, 0, i, j);
                 right(i, j + 1, 0, i, j);
@@ -165,27 +165,21 @@ void solve(int len) {
             }
         }
     }
-}
-
-void answer(int num) {
-    cout << "#" << num << " " << maxNum << endl;
+    if(maxNum == 0) maxNum = 1;
+    cout << "#" << num << " " << maxNum - 1 << endl;
     maxNum = 0;
 }
 
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(NULL); cout.tie(NULL);
-    
-    int testCase;
     cin >> testCase;
-
+    
     for(int i = 0; i < testCase; i++) {
-        int len;
-        cin >> len;
-        initMatrix(len);
-        input(len);
-//        printMatrix(len); // 참고용
-        solve(len);
-        answer(i + 1);
+        cin >> N;
+        initMatrix();
+//        printBoard();
+        solve(i + 1);
     }
+    
 }
