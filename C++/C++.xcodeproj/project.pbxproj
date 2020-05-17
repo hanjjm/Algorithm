@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		402ED057246EE5C900B34AA5 /* p5656.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 402ED04D246D70E600B34AA5 /* p5656.cpp */; };
+		40594D0B247168F300AB91EB /* s5650.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 402ED042246ADC8900B34AA5 /* s5650.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -54,6 +54,7 @@
 		40527705243E0053000DCB0D /* dfs2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = dfs2.cpp; sourceTree = "<group>"; };
 		40527707243F200D000DCB0D /* dfs3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = dfs3.cpp; sourceTree = "<group>"; };
 		4052770B243F4D39000DCB0D /* greedy1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = greedy1.cpp; sourceTree = "<group>"; };
+		40594D092471659700AB91EB /* p3954.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p3954.cpp; sourceTree = "<group>"; };
 		4069E4A2238440D5009D14B6 /* p3052.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p3052.cpp; sourceTree = "<group>"; };
 		407543572450319100241DC0 /* greedy2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = greedy2.cpp; sourceTree = "<group>"; };
 		407543592450395E00241DC0 /* greedy3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = greedy3.cpp; sourceTree = "<group>"; };
@@ -294,6 +295,7 @@
 				402ED04F246EAFD400B34AA5 /* s9940.cpp */,
 				402ED051246EC58700B34AA5 /* p9942.cpp */,
 				402ED055246EE1D000B34AA5 /* s1206.cpp */,
+				40594D092471659700AB91EB /* p3954.cpp */,
 			);
 			path = "C++";
 			sourceTree = "<group>";
@@ -355,7 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				402ED057246EE5C900B34AA5 /* p5656.cpp in Sources */,
+				40594D0B247168F300AB91EB /* s5650.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
