@@ -30,8 +30,8 @@ int main() {
                 break;
             }
         }
-        if(flag) cout << "#" << j + 1 << " " << "NO" << endl;
-        else cout << "#" << j + 1 << " " << "YES" << endl;
+        if(flag) cout << "#" << j + 1 << " " << "No" << endl;
+        else cout << "#" << j + 1 << " " << "Yes" << endl;
     }
 }
 
