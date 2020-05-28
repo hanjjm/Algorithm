@@ -1,14 +1,17 @@
-#include<iostream>
+#include <iostream>
+#include <vector>
 using namespace std;
-pair<int, int> matrix[352][352];
+int matrix[352][352];
+int origin[352][352] = {0, };
 int check[352][352];
+vector<pair<int, int>> vec;
 int x[4] = {0, 0, 1, -1};
 int y[4] = {1, -1, 0, 0};
 
 void init() {
     for(int i = 0; i < 352; i++) {
         for(int j = 0; j < 352; j++) {
-            matrix[i][j] = make_pair(-2, -2);
+            matrix[i][j] = -2;
             check[i][j] = 0;
         }
     }
@@ -20,57 +23,47 @@ void input(int N, int M) {
         for(int j = 0; j < M; j++) {
             cin >> point;
             if(point != 0) {
-                matrix[151 + i][151 + j] = make_pair(point, point);
+                vec.push_back(make_pair(151 + i, 151 + j));
+                matrix[151 + i][151 + j] = point;
+                origin[151 + i][151 + j] = point;
                 check[151 + i][151 + j] = 1;
             }
         }
     }
 }
 
-void printM(int N, int M) {
-    for(int i = 0; i < N; i++) {
-        for(int j = 0; j < M; j++) cout << matrix[151 + i][151 + j].first;
-        cout << endl;
-    }
-}
-
 void checkM(int time) {
-    for(int i = 0; i < 352; i++) {
-        for(int j = 0; j < 352; j++) matrix[i][j].first--;
+    for(int i = 0; i < vec.size(); i++) {
+        matrix[vec[i].first][vec[i].second]--;
     }
-    for(int i = 1; i < 351; i++) {
-        for(int j = 1; j < 351; j++) {
-            if(matrix[i][j].first == -1) {
-                if(matrix[i][j].second != 1 && check[i][j] != 3) {
-                    matrix[i][j].first += matrix[i][j].second - 1;
-                    check[i][j] = 3;
-                }
-                for(int k = 0; k < 4; k++) {
-                    if(check[i + x[k]][j + y[k]] == 0) {
-                        check[i + x[k]][j + y[k]] = time;
-                        matrix[i + x[k]][j + y[k]] = make_pair(matrix[i][j].second, matrix[i][j].second);
-                    } else if(check[i + x[k]][j + y[k]] == time) {
-                        if(matrix[i][j].second > matrix[i + x[k]][j + y[k]].second)
-                            matrix[i + x[k]][j + y[k]] = make_pair(matrix[i][j].second,matrix[i][j].second);
+     for(int i = 0; i < vec.size(); i++) {
+         if(matrix[vec[i].first][vec[i].second] == -1) {
+             if(matrix[vec[i].first][vec[i].second] != 1 && check[vec[i].first][vec[i].second] != 3) {
+                matrix[vec[i].first][vec[i].second] += origin[vec[i].first][vec[i].second] - 1;
+                check[vec[i].first][vec[i].second] = 3;
+            }
+             for(int k = 0; k < 4; k++) {
+                if(check[vec[i].first + x[k]][vec[i].second + y[k]] == 0) {
+                    check[vec[i].first + x[k]][vec[i].second + y[k]] = time;
+                    matrix[vec[i].first + x[k]][vec[i].second + y[k]] = origin[vec[i].first][vec[i].second];
+                    origin[vec[i].first + x[k]][vec[i].second + y[k]] = origin[vec[i].first][vec[i].second];
+                    vec.push_back(make_pair(vec[i].first + x[k], vec[i].second + y[k]));
+                } else if(check[vec[i].first + x[k]][vec[i].second + y[k]] == time) {
+                    if(origin[vec[i].first][vec[i].second] > origin[vec[i].first + x[k]][vec[i].second + y[k]]) {
+                        matrix[vec[i].first + x[k]][vec[i].second + y[k]] = origin[vec[i].first][vec[i].second];
+                        origin[vec[i].first + x[k]][vec[i].second + y[k]] = origin[vec[i].first][vec[i].second];
                     }
-                    
                 }
             }
-        }
-    }
-
-//    for(int i = 0; i < 352; i++) {
-//        for(int j = 0; j < 352; j++) {
-//            if(check[i][j] == 2) check[i][j] = 1;
-//        }
-//    }
+         }
+     }
 }
 
 int findAnswer() {
     int answer = 0;
     for(int i = 0; i < 352; i++) {
         for(int j = 0; j < 352; j++) {
-            if(matrix[i][j].first >= 0) answer++;
+            if(matrix[i][j] >= 0) answer++;
         }
     }
     return answer;
@@ -79,7 +72,6 @@ int findAnswer() {
 int solve(int K, int time) {
     while(true) {
         time++;
-//        update();
         checkM(time);
         if(time == K) return findAnswer();
     }
@@ -96,8 +88,8 @@ int main(int argc, char** argv)
         init();
         int N, M, K;
         cin >> N >> M >> K;
+        vec.clear();
         input(N, M);
-//        printM(N, M);
         cout << "#" << i + 1 << " " << solve(K, 0) << endl;
     }
 
