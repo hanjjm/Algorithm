@@ -40,6 +40,7 @@ bool passCheck() {
                 tempMax = max(tempMax, dep);
                 dep = 1;
             }
+            if(dep == standard) continue;
         }
         if(tempMax < standard) return false;
     }
@@ -64,7 +65,7 @@ void dfs2(int count, int number) {
         solve(number);
         return;
     }
-    
+
     for(int i = 0; i < depth; i++) {
         if(selected2[i].first == 0) continue;
         selected2[i].second = 0;
