@@ -37,6 +37,7 @@ void solve() {
         if(q.empty()) break;
         int frontX = q.front().first;
         int frontY = q.front().second;
+        if(visited[frontX][frontY] == timeSpend) break;
         q.pop();
         // 0 = 아래, 1 = 오른쪽, 2 = 위, 3 = 왼쪽
         if(matrix[frontX][frontY] == 1) { // 4방향
@@ -207,7 +208,6 @@ void solve() {
                 }
             }
         }
-        if(visited[frontX][frontY] == timeSpend - 1) break;
     }
     getAnswer();
 }
@@ -229,7 +229,7 @@ int main() {
         cin >> row >> column >> manholeX >> manholeY >> timeSpend;
         inputMatrix();
         solve();
-        printVisited();
+//        printVisited();
         cout << "#" << i << " " << answer << endl;
     }
 }
