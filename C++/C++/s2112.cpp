@@ -1,16 +1,8 @@
-//
-//  s2112.cpp
-//  C++
-//
-//  Created by KimHanJu on 2020/05/27.
-//  Copyright © 2020 KimHanJu. All rights reserved.
-//
-
 #include <iostream>
 using namespace std;
 int depth, width, standard;
 int matrix[15][22];
-int minNum = 987654321;
+int minNum;
 
 void inputMatrix() {
     for(int i = 0; i < 15; i++) {
@@ -37,50 +29,56 @@ bool passCheck() {
     return true;
 }
 
-void dfs(int index, int count) {
-    if(index == depth) {
-        minNum = depth;
+void dfs(int index, int count, int number) {
+    if(index > depth + 1) return;
+    if(count == number) {
+        if(passCheck()) {
+            minNum = min(minNum, count);
+            return;
+        }
         return;
     }
     
-    if(passCheck()) {
-        minNum = min(minNum, count + 1);
-        return;
-    }
-    
-    int originalColor = matrix[index][0];
-    dfs(index + 1, count);
-    for(int i = index; i <= width; i++) matrix[index][i] = 0;
-    dfs(index + 1, count + 1);
-    for(int i = index; i <= width; i++) matrix[index][i] = 1;
-    dfs(index + 1, count + 1);
-    for(int i = 1; i <= width; i++) matrix[index][i] = originalColor;
+    dfs(index + 1, count, number);
+    int originalColor[width + 1];
+    originalColor[0] = -2;
+    for(int i = 1; i <= width; i++) originalColor[i] = matrix[index][i];
+    for(int i = 1; i <= width; i++) matrix[index][i] = 0;
+    dfs(index + 1, count + 1, number);
+    for(int i = 1; i <= width; i++) matrix[index][i] = 1;
+    dfs(index + 1, count + 1, number);
+    for(int i = 1; i <= width; i++) matrix[index][i] = originalColor[i];
 }
 
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(NULL); cout.tie(NULL);
-    
+
     int testCase;
     cin >> testCase;
-    
+
     for(int i = 0; i < testCase; i++) {
         cin >> depth >> width >> standard;
         inputMatrix();
+        int number = 1;
         minNum = 987654321;
-
-        if(passCheck()) {
+        
+        if(standard == 1 || passCheck()) {
             cout << "#" << i + 1 << " " << 0 << endl;
             continue;
         }
-
-        dfs(0, 0);
         
+        while(true) {
+            dfs(1, 0, number);
+            if(number == standard) minNum = standard;
+            if(minNum != 987654321) break;
+            number++;
+        }
         cout << "#" << i + 1 << " " << minNum << endl;
     }
 }
 
-//#include <iostream>
+//#include <iostream> // 시간 초과
 //using namespace std;
 //int depth, width, standard;
 //int matrix[15][22];
@@ -137,10 +135,6 @@ int main() {
 //    if(minNum != 987654321) return;
 //    if(count == number) {
 //        solve(number);
-//        for(int i = 0; i < depth; i++) {
-////            cout << selected2[i].second << " ";
-//        }
-////        cout << endl;
 //        return;
 //    }
 //
@@ -156,9 +150,7 @@ int main() {
 //        for(int i = 0; i < depth; i++) {
 //            if(selected[i]) selected2[i] = make_pair(arr[i] , 0);
 //            else selected2[i] = make_pair(-1, -1);
-////            if(selected[i]) cout << arr[i] << " ";
 //        }
-////        cout << endl;
 //        dfs2(0, 0, number);
 //        return;
 //    }
