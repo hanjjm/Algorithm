@@ -34,24 +34,51 @@ void input() {
         eachHorse[i].x = x;
         eachHorse[i].y = y;
         eachHorse[i].direction = dir;
-        eachHorse[i].number = i;
+        eachHorse[i].number = i + 1;
         matrix[x][y].push_back(eachHorse[i].number);
         visited[x][y]++;
     }
 }
 
-void solve() {
-    for(int i = 0; i < horseCount; i++) {
-        if(eachHorse[i].direction == 1) {
-            
-        } else if(eachHorse[i].direction == 2) {
-            
-        } else if(eachHorse[i].direction == 3) {
-            
-        } else if(eachHorse[i].direction == 3) {
-            
+void move(int i) {
+    if(eachHorse[i].direction == 1) { // 오
+        if(chess[eachHorse[i].x][eachHorse[i].y + 1] == 2 || eachHorse[i].y + 1 == len) {
+            eachHorse[i].direction = 2;
+            if(chess[eachHorse[i].x][eachHorse[i].y - 1] == 2 || eachHorse[i].y - 1 == 0) {
+                eachHorse[i].direction = 1;
+                return;
+            } else move(i);
+        } else if(chess[eachHorse[i].x][eachHorse[i].y + 1] == 0) {
+            int eachSize = visited[eachHorse[i].x][eachHorse[i].y];
+            int flag = 0, count = 0, index = 0;
+            for(int i = 0; i < eachSize; i++) {
+                if(matrix[eachHorse[i].x][eachHorse[i].y][i] == i) {
+                    visited[eachHorse[i].x][eachHorse[i].y]--;
+                    visited[eachHorse[i].x][eachHorse[i].y + 1]++;
+                    count++;
+                    index = i;
+                    flag = 1;
+//                    matrix[eachHorse[i].x][eachHorse[i].y + 1].push_back(0);
+                } else if(flag) {
+                    visited[eachHorse[i].x][eachHorse[i].y]--;
+                    visited[eachHorse[i].x][eachHorse[i].y + 1]++;
+                    count++;
+                }
+            }
+        } else if(chess[eachHorse[i].x][eachHorse[i].y + 1] == 1) {
+                
         }
+    } else if(eachHorse[i].direction == 2) { // 왼
+        
+    } else if(eachHorse[i].direction == 3) { // 위
+        
+    } else if(eachHorse[i].direction == 3) { // 아래
+        
     }
+}
+
+void solve() {
+    for(int i = 0; i < horseCount; i++) move(i);
 }
 
 int main() {
