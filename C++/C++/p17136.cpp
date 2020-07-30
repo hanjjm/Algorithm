@@ -6,7 +6,6 @@
 //  Copyright © 2020 KimHanJu. All rights reserved.
 //
 
-
 int matrix[15][15];
 int copyMatrix[15][15];
 
