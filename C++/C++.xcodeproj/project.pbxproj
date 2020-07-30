@@ -119,6 +119,7 @@
 		40A249932381A89E00AB0770 /* p2920.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p2920.cpp; sourceTree = "<group>"; };
 		40A3217D243337C100034E73 /* p1012.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p1012.cpp; sourceTree = "<group>"; };
 		40A358BB24D314AA00E034F0 /* p1339.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p1339.cpp; sourceTree = "<group>"; };
+		40A358BD24D3396F00E034F0 /* g6.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = g6.cpp; sourceTree = "<group>"; };
 		40AAFA7223A14EF400EB5FA8 /* p5622.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p5622.cpp; sourceTree = "<group>"; };
 		40B1CABB23A7CE0F00C78565 /* p2941.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p2941.cpp; sourceTree = "<group>"; };
 		40BDDA9A247C14C20082BAEA /* s5653.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = s5653.cpp; sourceTree = "<group>"; };
@@ -348,6 +349,7 @@
 				40D3B15A24C5E76A0013AC4A /* g4.cpp */,
 				40D3B15C24C717330013AC4A /* g5.cpp */,
 				40A358BB24D314AA00E034F0 /* p1339.cpp */,
+				40A358BD24D3396F00E034F0 /* g6.cpp */,
 			);
 			path = "C++";
 			sourceTree = "<group>";
