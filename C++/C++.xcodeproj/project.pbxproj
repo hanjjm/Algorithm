@@ -129,6 +129,7 @@
 		40AC923224F0310700226B79 /* math11.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = math11.cpp; sourceTree = "<group>"; };
 		40AC923324F03A4D00226B79 /* math12.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = math12.cpp; sourceTree = "<group>"; };
 		40ADFDE324F17DF1006C25CD /* permutation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = permutation.cpp; sourceTree = "<group>"; };
+		40ADFDE424F1834B006C25CD /* bitset.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bitset.cpp; sourceTree = "<group>"; };
 		40B1CABB23A7CE0F00C78565 /* p2941.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p2941.cpp; sourceTree = "<group>"; };
 		40BDDA9A247C14C20082BAEA /* s5653.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = s5653.cpp; sourceTree = "<group>"; };
 		40BDDA9C247D38E90082BAEA /* s4008.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = s4008.cpp; sourceTree = "<group>"; };
@@ -366,6 +367,7 @@
 				40AC923224F0310700226B79 /* math11.cpp */,
 				40AC923324F03A4D00226B79 /* math12.cpp */,
 				40ADFDE324F17DF1006C25CD /* permutation.cpp */,
+				40ADFDE424F1834B006C25CD /* bitset.cpp */,
 			);
 			path = "C++";
 			sourceTree = "<group>";
