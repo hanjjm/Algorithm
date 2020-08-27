@@ -117,6 +117,7 @@
 		408D650023A3CC73002A955F /* p2775.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p2775.cpp; sourceTree = "<group>"; };
 		408D650223A3E4BB002A955F /* p1316.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p1316.cpp; sourceTree = "<group>"; };
 		408DAD4E24F7E722002907CB /* deq12.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = deq12.cpp; sourceTree = "<group>"; };
+		408DAD4F24F826D8002907CB /* time.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = time.cpp; sourceTree = "<group>"; };
 		40A249932381A89E00AB0770 /* p2920.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p2920.cpp; sourceTree = "<group>"; };
 		40A3217D243337C100034E73 /* p1012.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p1012.cpp; sourceTree = "<group>"; };
 		40A358BB24D314AA00E034F0 /* p1339.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p1339.cpp; sourceTree = "<group>"; };
@@ -382,6 +383,7 @@
 				40C9908124F6AD7300556B57 /* dfs15.cpp */,
 				40C9908224F6D52700556B57 /* div.cpp */,
 				408DAD4E24F7E722002907CB /* deq12.cpp */,
+				408DAD4F24F826D8002907CB /* time.cpp */,
 			);
 			path = "C++";
 			sourceTree = "<group>";
