@@ -64,6 +64,7 @@
 		405372AC24FE4228003F04BB /* string31.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = string31.cpp; sourceTree = "<group>"; };
 		405372AD24FE4C58003F04BB /* vec12.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = vec12.cpp; sourceTree = "<group>"; };
 		405372AE24FF9ADC003F04BB /* twoPointer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = twoPointer.cpp; sourceTree = "<group>"; };
+		405372AF2501121E003F04BB /* bfs14.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bfs14.cpp; sourceTree = "<group>"; };
 		40594D092471659700AB91EB /* p3954.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p3954.cpp; sourceTree = "<group>"; };
 		40594D0C247193DE00AB91EB /* s5658.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = s5658.cpp; sourceTree = "<group>"; };
 		40678EC724F93CC10059B36D /* bruteForce511.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bruteForce511.cpp; sourceTree = "<group>"; };
@@ -401,6 +402,7 @@
 				405372AC24FE4228003F04BB /* string31.cpp */,
 				405372AD24FE4C58003F04BB /* vec12.cpp */,
 				405372AE24FF9ADC003F04BB /* twoPointer.cpp */,
+				405372AF2501121E003F04BB /* bfs14.cpp */,
 			);
 			path = "C++";
 			sourceTree = "<group>";
