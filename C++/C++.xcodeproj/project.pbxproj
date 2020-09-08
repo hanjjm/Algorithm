@@ -151,6 +151,7 @@
 		40B1A42025064F0C00B722C6 /* floydM.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = floydM.cpp; sourceTree = "<group>"; };
 		40B1A4212507616800B722C6 /* binarySearch5.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = binarySearch5.cpp; sourceTree = "<group>"; };
 		40B1A4222507959700B722C6 /* simulation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = simulation.cpp; sourceTree = "<group>"; };
+		40B1A423250796D600B722C6 /* binarySearch6.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = binarySearch6.cpp; sourceTree = "<group>"; };
 		40B1CABB23A7CE0F00C78565 /* p2941.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p2941.cpp; sourceTree = "<group>"; };
 		40BDDA9A247C14C20082BAEA /* s5653.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = s5653.cpp; sourceTree = "<group>"; };
 		40BDDA9C247D38E90082BAEA /* s4008.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = s4008.cpp; sourceTree = "<group>"; };
@@ -413,6 +414,7 @@
 				40B1A42025064F0C00B722C6 /* floydM.cpp */,
 				40B1A4212507616800B722C6 /* binarySearch5.cpp */,
 				40B1A4222507959700B722C6 /* simulation.cpp */,
+				40B1A423250796D600B722C6 /* binarySearch6.cpp */,
 			);
 			path = "C++";
 			sourceTree = "<group>";
