@@ -1,7 +1,7 @@
 #include <string>
 #include <vector>
 #include <algorithm>
-#include <iostream>
+#include <iostream>http://www.samsungcareers.com/rec/apply/FreResumeServlet#
 using namespace std;
 
 int solution(int n, vector<int> weak, vector<int> dist) {

@@ -1,32 +1,40 @@
-#include <string>
-#include <vector>
-#include <algorithm>
+//
+//  binarySearch6.cpp
+//  C++
+//
+//  Created by KimHanJu on 2020/09/09.
+//  Copyright © 2020 KimHanJu. All rights reserved.
+//
+
 #include <iostream>
 using namespace std;
 
-unsigned long long solution(int n, vector<int> times) {
-    unsigned long long answer = 0;
-    sort(times.begin(), times.end());
-    unsigned long long right = times[times.size() - 1] * n;
-    unsigned long long left = 1;
-    answer = right;
+int main() {
+    int tc, target;
+    cin >> tc >> target;
+    int height[1000000] = {0, };
+    for(int i = 0; i < tc; i++) cin >> height[i];
+    
+    int answer = 0;
+    int left = 1, right = 2000000000;
+    int mid = (left + right) / 2;
     
     while(left <= right) {
-        unsigned long long count = 0;
-        unsigned long long mid = (left + right) / 2;
-            
-        for(int i = 0; i < times.size(); i++) {
-            count += mid / times[i];
+        mid = (left + right) / 2;
+        long long plus = 0;
+        
+        for(int i = 0; i < tc; i++) {
+            if(height[i] >= mid) plus += height[i] - mid;
         }
         
-        if(count < n) {
-            left = mid + 1;
-        } else {
-            if(answer >= mid) answer = mid;
+        if(plus < target) { // 실패
             right = mid - 1;
+        } else { // 성공
+            if(answer < mid) answer = mid;
+            left = mid + 1;
         }
-        
     }
     
-    return answer;
+    cout << answer;
+    return 0;
 }
